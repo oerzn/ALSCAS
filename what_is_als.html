@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is ALS? Symptoms, Causes & Treatment | [ALS CARE and SUPPORT Foundation][ALSCAS]</title>
+    <meta name="description" content="Learn about ALS (Amyotrophic Lateral Sclerosis), its symptoms, causes, and available treatment options to manage the disease effectively.">
+    <meta name="keywords" content="What is ALS, ALS symptoms, ALS treatment, Amyotrophic Lateral Sclerosis, ALS diagnosis, ALS cure, ALS early signs">
+    <meta name="author" content="[ALS CARE and SUPPORT Foundation]">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph (For social media sharing) -->
+    <meta property="og:title" content="What is ALS? Symptoms, Causes & Treatment">
+    <meta property="og:description" content="Understand ALS, its symptoms, causes, and treatment options. Stay informed with the latest research and management strategies.">
+    <meta property="og:image" content="https://alscas.org/images/als-thumbnail.jpg">
+    <meta property="og:url" content="https://alscas.org/what-is-als">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What is ALS? Symptoms, Causes & Treatment">
+    <meta name="twitter:description" content="Learn about ALS, its symptoms, causes, and available treatments to help manage the condition.">
+    <meta name="twitter:image" content="https://alscas.org/images/als-thumbnail.jpg">
+    <script src="bootstrap-loader.js" defer></script>
+
+    <!-- Structured Data: Schema Markup for ALS Content -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalCondition",
+        "name": "Amyotrophic Lateral Sclerosis (ALS)",
+        "alternateName": "Lou Gehrig’s Disease",
+        "description": "ALS is a progressive neurodegenerative disease affecting nerve cells in the brain and spinal cord, leading to muscle weakness, paralysis, and loss of mobility.",
+        "cause": {
+          "@type": "MedicalCause",
+          "name": "Genetic factors, environmental triggers, and unknown causes"
+        },
+        "possibleTreatment": [
+          {
+            "@type": "MedicalTherapy",
+            "name": "Riluzole (Rilutek)",
+            "description": "A medication that slows ALS progression by reducing glutamate levels."
+          },
+          {
+            "@type": "MedicalTherapy",
+            "name": "Edaravone (Radicava)",
+            "description": "An antioxidant therapy that helps reduce oxidative stress."
+          }
+        ],
+        "signOrSymptom": [
+          {
+            "@type": "MedicalSymptom",
+            "name": "Muscle weakness"
+          },
+          {
+            "@type": "MedicalSymptom",
+            "name": "Twitching and muscle cramps"
+          },
+          {
+            "@type": "MedicalSymptom",
+            "name": "Difficulty speaking and swallowing"
+          },
+          {
+            "@type": "MedicalSymptom",
+            "name": "Breathing difficulties"
+          }
+        ],
+        "associatedAnatomy": {
+          "@type": "AnatomicalStructure",
+          "name": "Brain and spinal cord neurons"
+        },
+        "url": "https://yourwebsite.com/what-is-als"
+      }
+      </script>
+  
+      <!-- FAQ Schema Markup -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is ALS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ALS, or Amyotrophic Lateral Sclerosis, is a progressive neurological disease that affects nerve cells in the brain and spinal cord, leading to muscle weakness and paralysis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the early symptoms of ALS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Early symptoms include muscle weakness, twitching, difficulty gripping objects, and slurred speech."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ALS hereditary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Approximately 10% of ALS cases are hereditary (Familial ALS) and are linked to genetic mutations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What treatments are available for ALS?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no cure for ALS, but medications like Riluzole and Edaravone can help slow its progression. Supportive therapies such as speech and physical therapy can also improve quality of life."
+            }
+          }
+        ]
+      }
+      </script>
+</head>
+<body>
+  <!-- NAVBAR -->
+    <div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("navbar").innerHTML = data);
+</script>
+
+<div class=" container-fluid px-5 py-5">
+
+
+<header >
+  <h1 >What is ALS?</h1>
+</header>
+
+<section id="introduction">
+  <p><strong>ALS (Amyotrophic Lateral Sclerosis)</strong>, also known as <strong>Lou Gehrig’s Disease</strong>, is a progressive neurodegenerative disorder that affects nerve cells in the brain and spinal cord. Over time, it leads to muscle weakness, paralysis, and loss of mobility.</p>
+  <p>Every year, about <strong>5,000 new ALS cases</strong> are diagnosed in the U.S. While there is no cure, early diagnosis and treatment can help manage symptoms and improve quality of life.</p>
+</section>
+
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+              
+  
+              
+  #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+  }
+              
+  #carousel {
+      overflow: hidden;
+      width: 90%;
+      max-width: 600px;
+      height: 400px;
+      border-radius: 4px;
+      background-color: #fff;
+  }
+              
+  .p-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.4s ease-in-out;
+  }
+              
+  #button_a:checked ~ #carousel .p-wrapper {
+      transform: translateY(0); 
+  }
+              
+  #button_b:checked ~ #carousel .p-wrapper {
+      transform: translateY(-100%); 
+  }
+  
+  #button_c:checked ~ #carousel .p-wrapper {
+      transform: translateY(-200%); 
+  }
+  
+  #button_d:checked ~ #carousel .p-wrapper {
+      transform: translateY(-300%); 
+  }
+              
+  [class^="panel_"] {
+      overflow: auto;
+      position: relative;
+      width: inherit;
+      height: inherit;
+      padding: 24px;
+  }
+              
+  #navigation {
+      display: flex;
+      margin-top: 16px;
+      gap: 8px;
+  }
+  
+  [class^="label_"] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      height: 32px;
+      text-align: center;
+      border-radius: 4px;
+      color: #aaa;
+      background-color: #fff;
+      transition: all 0.3s ease;
+  }
+              
+  [class^="label_"]:hover {
+      color: #444;
+      background-color: #ffeed9;
+  }
+              
+  #button_a:checked ~ #navigation .label_a,
+  #button_b:checked ~ #navigation .label_b,
+  #button_c:checked ~ #navigation .label_c,
+  #button_d:checked ~ #navigation .label_d {
+      cursor: default;
+      color: #fff;
+      background-color: #222;
+  }
+  
+  @media (max-width: 768px) {
+      body {
+          font-size: 10px;
+          padding: 16px;
+      }
+      #carousel {
+          height: 300px;
+      }
+      [class^="panel_"] {
+          padding: 16px;
+      }
+  }
+  </style>
+  
+  <div id="container">
+      
+      <input hidden type="radio" name="carousel-control" id="button_a" checked/>
+      <input hidden type="radio" name="carousel-control" id="button_b"/>
+      <input hidden type="radio" name="carousel-control" id="button_c"/>
+      <input hidden type="radio" name="carousel-control" id="button_d"/>
+      
+      <div id="carousel">
+          <div class="p-wrapper">
+              
+              <section class="panel_a">
+                  <h1>What is ALS?</h1>
+                  <h2>Understanding ALS</h2>
+                  <p>Amyotrophic Lateral Sclerosis (ALS) is a progressive neurodegenerative disease that affects nerve cells in the brain and spinal cord. It leads to the loss of voluntary muscle control, impacting movement, speech, swallowing, and eventually breathing.</p>
+                  <p>ALS is also known as Lou Gehrig's disease, named after the famous baseball player who was diagnosed with the condition. The disease affects motor neurons, which gradually deteriorate and die, leading to muscle weakness and atrophy.</p>
+              </section>
+              
+              <section class="panel_b">
+                  <h2>Symptoms of ALS</h2>
+                  <p>Symptoms of ALS can vary from person to person but commonly include:</p>
+                  <ul>
+                      <li>Muscle weakness in the arms, legs, or hands</li>
+                      <li>Difficulty speaking, swallowing, or breathing</li>
+                      <li>Muscle cramps and twitching</li>
+                      <li>Loss of coordination and balance</li>
+                      <li>Fatigue and difficulty walking</li>
+                  </ul>
+                  <p>As ALS progresses, individuals may experience increased difficulty with daily activities and require assistive devices.</p>
+              </section>
+              
+              <section class="panel_c">
+                  <h2>Diagnosis of ALS</h2>
+                  <p>There is no single test to diagnose ALS. Doctors use a combination of clinical examinations and diagnostic tests, such as:</p>
+                  <ul>
+                      <li>Electromyography (EMG) to measure electrical activity in muscles</li>
+                      <li>Nerve conduction studies to assess nerve function</li>
+                      <li>MRI scans to rule out other neurological disorders</li>
+                      <li>Spinal taps and genetic testing in some cases</li>
+                  </ul>
+                  <p>Early diagnosis is crucial for managing symptoms and planning treatment strategies.</p>
+              </section>
+              
+              <section class="panel_d">
+                  <h2>Treatment for ALS</h2>
+                  <p>Currently, there is no cure for ALS, but treatment options can help manage symptoms and improve quality of life. These include:</p>
+                  <ul>
+                      <li>Medications like Riluzole and Edaravone to slow disease progression</li>
+                      <li>Physical therapy to maintain muscle function</li>
+                      <li>Speech therapy to assist with communication</li>
+                      <li>Assistive devices such as wheelchairs and communication aids</li>
+                      <li>Respiratory support for breathing difficulties</li>
+                  </ul>
+                  <p>A multidisciplinary approach involving doctors, therapists, and caregivers is essential for comprehensive ALS care.</p>
+              </section>
+              
+          </div>
+      </div>
+      
+      <div id="navigation">
+          <label for="button_a" class="label_a">ALS</label>
+          <label for="button_b" class="label_b">Symptoms</label>
+          <label for="button_c" class="label_c">Diagnosis</label>
+          <label for="button_d" class="label_d">Treatment</label>
+      </div>
+  </div>
+  
+  
+<section id="what-is-als">
+  <h2>What is ALS?</h2>
+  <p>ALS is a <strong>motor neuron disease</strong> that weakens the body’s ability to control voluntary muscle movements. It affects two types of nerve cells:</p>
+  <ul>
+      <li><strong>Upper motor neurons</strong> (brain)</li>
+      <li><strong>Lower motor neurons</strong> (spinal cord)</li>
+  </ul>
+  <p>As these neurons deteriorate, patients experience difficulty walking, speaking, and swallowing.</p>
+</section>
+
+<section id="causes">
+  <h2>What Causes ALS?</h2>
+  <h3>Genetic Factors</h3>
+  <p>About <strong>10% of ALS cases</strong> are inherited (<em>Familial ALS</em>). Gene mutations in <strong>C9orf72, SOD1, and TARDBP</strong> are linked to ALS.</p>
+
+  <h3>Environmental Factors</h3>
+  <ul>
+      <li>Exposure to toxins and heavy metals</li>
+      <li>Smoking and prolonged physical exertion</li>
+      <li>Military service (ALS is twice as common in veterans)</li>
+  </ul>
+
+  <h3>Sporadic ALS (90% of Cases)</h3>
+  <p>Most ALS cases appear <strong>randomly</strong> with no known cause. A combination of genetic predisposition and environmental triggers may play a role.</p>
+</section>
+
+<section id="symptoms">
+  <h2>Symptoms of ALS</h2>
+  <h3>Early Symptoms</h3>
+  <ul>
+      <li>Muscle weakness (hands, legs, or feet)</li>
+      <li>Twitching (fasciculations)</li>
+      <li>Difficulty gripping objects</li>
+      <li>Slurred speech</li>
+  </ul>
+
+  <h3>Advanced Symptoms</h3>
+  <ul>
+      <li>Difficulty swallowing (dysphagia)</li>
+      <li>Loss of mobility (requiring a wheelchair)</li>
+      <li>Breathing difficulties (may require ventilation support)</li>
+      <li>Complete paralysis in later stages</li>
+  </ul>
+</section>
+
+<section id="diagnosis">
+  <h2>How is ALS Diagnosed?</h2>
+  <p>There is no <strong>single test</strong> to diagnose ALS. Doctors use multiple tests:</p>
+  <ul>
+      <li><strong>Electromyography (EMG):</strong> Measures nerve signals in muscles.</li>
+      <li><strong>MRI Scans:</strong> Helps rule out other neurological conditions.</li>
+      <li><strong>Genetic Testing:</strong> Determines inherited ALS mutations.</li>
+      <li><strong>Spinal Tap & Blood Tests:</strong> Identifies other potential conditions.</li>
+  </ul>
+</section>
+
+<section id="treatment">
+  <h2>ALS Treatment & Management</h2>
+  <h3>Medications</h3>
+  <ul>
+      <li><strong>Riluzole (Rilutek):</strong> Slows ALS progression.</li>
+      <li><strong>Edaravone (Radicava):</strong> Reduces oxidative stress.</li>
+  </ul>
+
+  <h3>Physical & Speech Therapy</h3>
+  <p>Therapy can help patients maintain mobility and communication for as long as possible.</p>
+
+  <h3>Assistive Devices</h3>
+  <p>Wheelchairs, BiPAP machines, and other devices improve quality of life.</p>
+
+  <h3>Clinical Trials & Research</h3>
+  <p>Ongoing research is exploring new drugs and treatments for ALS.</p>
+</section>
+
+<section id="support">
+  <h2>Living with ALS: Patient Support & Resources</h2>
+  <p>Support groups, caregiver resources, and lifestyle changes can help ALS patients and families cope.</p>
+</section>
+
+<section id="faq">
+  <h2>FAQs</h2>
+  <details>
+      <summary><strong>What is ALS?</strong></summary>
+      <p>ALS is a progressive neurodegenerative disease affecting motor neurons, leading to muscle weakness and paralysis.</p>
+  </details>
+  <details>
+      <summary><strong>Is there a cure for ALS?</strong></summary>
+      <p>There is no cure, but medications like Riluzole and Edaravone can help slow progression.</p>
+  </details>
+  <details>
+      <summary><strong>What are the early symptoms of ALS?</strong></summary>
+      <p>Early symptoms include muscle weakness, twitching, difficulty speaking, and loss of grip strength.</p>
+  </details>
+</section>
+
+<section id="donate">
+  <h2>How You Can Help</h2>
+  <p>Support ALS research by <a href="https://yourwebsite.com/donate">donating</a> or participating in fundraising events.</p>
+</section>
+
+
+
+</div>
+<!-- FOOTER -->
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+<script src="script.js"></script>   
+</body>
+</html>

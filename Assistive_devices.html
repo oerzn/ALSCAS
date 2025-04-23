@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALS Assistive Devices</title>
+    <meta name="description" content="PEG dressing: Techniques, Feeding Tubed and nutrition">
+    <meta name="keywords" content="Ryle Tube, PEG tube, Protein, Management, swallowing, ALS-eating_difficulty" >
+    <meta name="author" content="[ALS CARE and SUPPORT Foundation, ALSCAS]">
+    <script src="bootstrap-loader.js" defer></script>
+    <style>
+        body {
+          padding: 40px 20px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #f9f9f9;
+        }
+        h1, h2 {
+          text-align: center;
+          color: #003366;
+          margin-bottom: 30px;
+        }
+        .device-section {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 30px;
+          margin-bottom: 50px;
+        }
+        .device-card {
+          background: white;
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+          transition: transform 0.3s;
+        }
+        .device-card:hover {
+          transform: translateY(-5px);
+        }
+        .device-img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+        .device-body {
+          padding: 20px;
+        }
+        .device-title {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #004080;
+          margin-bottom: 10px;
+        }
+        .device-text {
+          font-size: 0.95rem;
+          color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("navbar").innerHTML = data);
+</script>
+<div class="container py-5">
+    <h1 class="py-2">Assistive Devices for ALS Patients</h1>
+    <p class="text-center py-2">Assistive technology enhances quality of life by supporting independence, communication, mobility, and daily care.</p>
+
+    <h2 class="py-3">Mobility Assistance (Limb Impairment)</h2>
+    <div class="device-section py-4">
+      <div class="device-card">
+        <img src="images\als_power_wheelchair.png" alt="Powered Wheelchair" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Powered Wheelchair</div>
+          <div class="device-text">Facilitates mobility and independence with customizable controls for ALS patients with limited strength.</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="images\AFOS.jpg" alt="Walker" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Ankles Foot Braces (AFOs)</div>
+          <div class="device-text">Foot drop happens in ALS, AFOs Help patient to walk, avialble in different sizes</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="images\Walking_stick.jpg" alt="Stick" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Stick</div>
+          <div class="device-text">Used in initial stage of walking difficulty</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="images\recliner_wheelchair.jpg" alt="Powered Wheelchair" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Recliner Wheelchair with head support</div>
+          <div class="device-text">Wheelchair with reclining capabilty and head support give PALS great comfort, some have Commode too, which is aslo very useful.</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="images\walker.jpg" alt="Walker" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Walker</div>
+          <div class="device-text">Provides stability and support during walking for those with early-stage muscle weakness.</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="images\Commode_wheelchair.jpg" alt="Commode_wheelchair" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Walker</div>
+          <div class="device-text">Helps in Toileting assistance, Transfer ease.</div>
+        </div>
+      </div>
+    </div>
+    
+
+    <h2 class="py-3">Communication Aids (Speech Impairment)</h2>
+    <div class="device-section">
+      <div class="device-card">
+        <img src="images\tobii.png" alt="Tobii Eye Tracker" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Tobii Eye Tracker</div>
+          <div class="device-text">Allows ALS patient to control computers and communicate through eye movement, ideal for severe speech impairment. It have various models.</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="images\COMMUNICATION_BOARD.jpg" alt="Communication Chart" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Communication Chart</div>
+          <div class="device-text">Simple and effective tool for basic communication using letters, symbols, or phrases.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Feeding Support (Swallowing Issues)</h2>
+    <div class="device-section">
+      <div class="device-card">
+        <img src="your-image-feeding.jpg" alt="Feeding Assist Tools" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Feeding Assist Tools</div>
+          <div class="device-text">Adaptive utensils, plate guards, and feeding robots can help patients eat independently and safely.</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="your-image-tube.jpg" alt="Feeding Tube" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Feeding Tube (PEG/NGT)</div>
+          <div class="device-text">Provides essential nutrition and hydration when swallowing becomes unsafe or inefficient.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Respiratory Assistance</h2>
+    <div class="device-section">
+      <div class="device-card">
+        <img src="your-image-respiratory.jpg" alt="BiPAP Machine" class="device-img">
+        <div class="device-body">
+          <div class="device-title">BiPAP Machine</div>
+          <div class="device-text">Supports breathing by delivering pressurized air during inhalation and exhalation.</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="images\suction machine.jpg" alt="Suction Machine" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Suction Machine</div>
+          <div class="device-text">Helps remove mucus and secretions, reducing the risk of aspiration and infection.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Daily Living and Comfort</h2>
+    <div class="device-section">
+      <div class="device-card">
+        <img src="your-image-bed.jpg" alt="Adjustable Hospital Bed" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Adjustable Hospital Bed</div>
+          <div class="device-text">Improves comfort, posture, and ease of caregiving with motorized features.</div>
+        </div>
+      </div>
+      <div class="device-card">
+        <img src="your-image-lift.jpg" alt="Patient Lift" class="device-img">
+        <div class="device-body">
+          <div class="device-title">Patient Lift</div>
+          <div class="device-text">Safely transfers individuals between bed and chair, reducing caregiver strain.</div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

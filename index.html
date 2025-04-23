@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>ALS Care and Support - Home</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images\favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images\favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images\favicon\favicon-16x16.png">
+    <link rel="manifest" href="images\favicon\site.webmanifest">
+
+    <!-- delete_test_mobile casroul -->
+    <style>
+      @media (max-width: 768px) {
+        .carousel-inner {
+          min-height: 300px; /* Set your desired height */
+        }
+    
+        .carousel-item {
+          min-height: 300px; /* Same as above */
+        }
+    
+        .carousel-item img {
+          object-fit: cover;
+          height: 300px;
+          width: 100%;
+        }
+      }
+    </style>
+    
+</head> 
+
+<body>
+  
+    
+  
+  
+   
+    <!-- bootstrap navbar -->
+
+    <!-- <div class="d-lg-none px-4" style="justify-content:space-around; display: flex;">
+      <a class="link-body-emphasis" style="text-decoration: none;" href="https://twitter.com/alscasindia"><i class="bi bi-twitter-x mx-1" style="font-size: 1.2em; color: #020202;"></i></a>
+      <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.facebook.com/people/ALS-Care-Support-India/100077315825197/"><i class="bi bi-facebook mx-1" style="font-size: 1.2em; color: #0940cb;"></i></a>
+      <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.youtube.com/channel/UCAk1mKwi_tj1UywUSP5kHag"><i class="bi bi-youtube mx-1" style="font-size: 1.3em; color: #e90101;" ></i></a>
+      <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.instagram.com/als.careandsupportindia/"><i class="bi bi-instagram mx-1" style="font-size: 1.2em; color: #cb094a;"></i></a>
+      <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.linkedin.com/company/als-care-and-support-foundation/"><i class="bi bi-linkedin mx-1" style="font-size: 1.2em; color: #0940cb;"></i></a>
+      <a class="link-body-emphasis" style="text-decoration: none;" href="https://linktr.ee/alscasindia"><i class="fa-solid fa-link" style="font-size: 1.1em;"></i></a>
+    </div> -->
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("navbar").innerHTML = data);
+</script>
+
+      <div class=" d-none d-lg-block  sticky-container bg-info">
+        <ul class="sticky">
+            <li class="border rounded-top"><a style="text-decoration: none;" href="https://www.facebook.com/people/ALS-Care-Support-India/100077315825197/" target="_blank"><i class="bi bi-facebook mx-1 my-2 px-2" style="font-size: 1.6em; color: #0940cb;" ></i></a></li>
+            <li class="border"><a style="text-decoration: none;" href="https://twitter.com/alscasindia" target="_blank"><i class="bi bi-twitter-x my-2 mx-1 px-2" style="font-size: 1.6em; color: #020202;"></i></a></li>
+            <li class="border"><a class="link-body-emphasis dropdown-item" href="https://www.linkedin.com/company/als-care-and-support-foundation/" target="_blank"><i class="bi bi-linkedin mx-1  px-2" style="font-size: 1.6em; color: #0940cb;"></i></a></li>
+            <li class="border"><a class="link-body-emphasis dropdown-item" href="https://www.youtube.com/channel/UCAk1mKwi_tj1UywUSP5kHag" target="_blank"><i class="bi bi-youtube mx-1  my-2 px-2" style="font-size: 1.6em; color: #e90101;" ></i></a></li>
+            <li class="border"><a class="link-body-emphasis dropdown-item" href="https://www.instagram.com/als.careandsupportindia/" target="_blank"><i class="bi bi-instagram mx-1 my-2 px-2" style="font-size: 1.6em; color: #cb094a;"></i></a></li>
+            <li class="border rounded-bottom"><a class="link-body-emphasis dropdown-item" href="https://linktr.ee/alscasindia" target="_blank"><i class="fa-solid fa-link mx-1 my-2 px-2" style="font-size: 1.6em;"></i></a></li>
+        </ul>
+    </div>
+      <div class="border-top border-bottom border-info-subtle d-lg-none py-1 px-4 mb-4 shadow" style="justify-content:space-around; display: flex;">
+        <a class="link-body-emphasis" style="text-decoration: none;" href="https://twitter.com/alscasindia"><i class="bi bi-twitter-x mx-1" style="font-size: 1.2em; color: #020202;"></i></a>
+        <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.facebook.com/people/ALS-Care-Support-India/100077315825197/"><i class="bi bi-facebook mx-1" style="font-size: 1.2em; color: #0940cb;"></i></a>
+        <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.youtube.com/channel/UCAk1mKwi_tj1UywUSP5kHag"><i class="bi bi-youtube mx-1" style="font-size: 1.3em; color: #e90101;" ></i></a>
+        <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.instagram.com/als.careandsupportindia/"><i class="bi bi-instagram mx-1" style="font-size: 1.2em; color: #cb094a;"></i></a>
+        <a class="link-body-emphasis" style="text-decoration: none;" href="https://www.linkedin.com/company/als-care-and-support-foundation/"><i class="bi bi-linkedin mx-1" style="font-size: 1.2em; color: #0940cb;"></i></a>
+        <a class="link-body-emphasis" style="text-decoration: none;" href="https://linktr.ee/alscasindia"><i class="fa-solid fa-link" style="font-size: 1.1em;"></i></a>
+      </div>
+      
+      <style>
+        .carousel-inner img {
+            aspect-ratio: 16/6.7; 
+             object-fit: cover; 
+        }
+      </style>
+
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3500">
+            <a href="media\image_gallery.html"><img style="object-fit: fill;" src="images\slide1.png" class="d-block w-100" class="img-fluid"  alt="..."></a>
+            
+            <div class="carousel-caption d-none  ">
+              <h2 style="color: rgb(255, 249, 249);">ALS care and support Family</h2>
+              <p style="color: rgb(255, 255, 255);"> Family of Patients and Caregivers, Click to explore</p>
+              <!-- <a href="#" class="btn btn-primary">
+                Explore
+              </a> -->
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="3000">
+            <a href="media\neurorehab_award.html"><img src="images\collage.png"   class="d-block w-100" class="img-fluid" alt="..."></a>
+            
+            <div class="carousel-caption d-none d-md-block bg-black">
+              <h2 style="color: rgb(255, 249, 249);">ALS care and support Family</h2>
+              <p style="color: rgb(255, 255, 255);"> Family of Patients and Caregivers, Click to explore</p>
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="3000">
+            <a href="media\neurorehab_award.html"><img src="images\Awardcrop.jpg"   class="d-block w-100" class="img-fluid" alt="..."></a>
+            
+            <div class="carousel-caption d-none d-md-block bg-black">
+              <h5>ALSCAS recieve NeuroRehab Initiative of the year 2023 Award.</h5>
+              <p>Click to read more</p>
+            </div>
+          </div>
+          
+          <div class="carousel-item" data-bs-interval="3000">
+            <a href="media\als_warrior_stories.html"><img src="images\Pradhan's Family.jpeg" class="d-block w-100" class="img-fluid" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block bg-black">
+              <h4 style="background-color: black;">ALS Warrior: Dr.Janmejay Pradhan, DRDO Scientist</h4>
+              <p> Click to Read the Full story of ALS Warrior</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <a href="https://youtu.be/IAIu82NkMNM"><img style="object-fit: contain;" src="images\Limca-certi.jpg" class="d-block w-100" class="img-fluid" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block bg-black">
+              <h4 style="background-color: black;">Limca Book of Records Certificate 2016, received on 30th March 2022.</h4>
+              <p> Click to Read the Full story</p>
+              
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="https://youtu.be/IAIu82NkMNM" ><img style="object-fit: fill;" src="images\Dear Zindagi.png" class="d-block w-100" class="img-fluid" alt="..."></a>
+            <!-- <div class="carousel-caption d-none d-md-block bg-black">
+              <h4 style="background-color: black;">ALS Warrior: Dr.Janmejay Pradhan, DRDO Scientist</h4>
+              <p> Click to Read the Full story of ALS Warrior</p>
+              
+            </div> -->
+          </div>
+          
+          
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr class="featurette-divider">
+      <div class="py-1 alert alert-primary container-fluid text-center" role="alert" style="background-color: #6DC5D1;">
+        <marquee behavior="scroll" direction="left"><i class="bi bi-info-circle"></i>
+        Check out our latest NewsLetter!!!
+        <a href="newsletter.html">Explore</a>
+      <span class="px-5">Check out our ALS Ready Reckon <a href="Ready_Reckoner_ALS journey.HTML">Explore</a></span></marquee>     
+      </div>
+      <!-- fca884 -->
+      <div id="our-background" class=" py-3 my-4 mx-4 shadow  rounded-3 container-fuild" style="background-color: #ffffff">
+        <h1 class="display-5 fw-bold  text-center text-body-emphasis" style="font-family: Century Gothic;">Who we are?</h1>
+        <div class="col mx-5 my-3">
+          <p class="text-wrap lh-base mb-4" style="text-align: justify;"><strong>ALS Care and Support India</strong>  is purely a family of caregivers and patients which provide critical knowledge and support to fellow ALS community in India. <strong>Amyotrophic lateral sclerosis (ALS) </strong> is a rare progresive neurodegenerative disease. ALSCAS, set-up in 2015, it is a 24 x 7 assistance community, which has touched the lives of 650+ patients and their caregivers.  Functioning more as a close family, it guides fellow PALS/CALS  with each and every aspect of the disease based on their own experiences and extensive research. Be it nutrition, Feeding management, using BiPAP, home ICU management, creating awareness, advocacy and much more. All this with full empathy and compassion and without a penny of charge.</p>
+          <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            
+          </div> -->
+        </div>
+      </div>
+      <!-- ALS vision and mission section -->
+      <div class="container-fluid col-xxl-8 px-4 py-0 ">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-1 justify-content-center">
+          <div class="col-10 col-sm-8 col-lg-6 shadow">
+            <a href="images\als-care-support-group_orig_demo.png" target="_blank"><img src="images\als-care-support-group_orig_demo.png" class="d-block mx-lg-auto img-fluid" alt="ALSCAS Journey" width="700" height="500" loading="eager"></a>
+          </div>
+          <!-- style="font-family: 'Berkshire Swash', cursive;" -->
+          <div class="col-lg-6">
+            <!-- <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Our Vision and Mission</h1> -->
+            <p><h4 style="text-decoration:underline;">Our Vision</h4></br>
+              <p>Care, Compassion, and Cure for ALS</p>
+            ​<h4 style="text-decoration:underline;">Our Mission</h4><br>
+              <p style="text-align: justify;">To build a compassionate ALS Care and Support family; provide comprehensive knowledge and guidance for effective ALS life management; empower persons with ALS to live with dignity, create awareness and advocate for affordable treatment, research and cure.</p></p><br>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="about_us.html" type="button" class="btn btn-primary btn-lg px-4 me-md-2">About Us</a>
+              <!-- <a href="#joingroup" type="button" class="btn btn-outline-secondary btn-lg px-4">Join Us</a> -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <hr>
+      
+      
+      <div class="container py-5">
+        <div class="row mb-4 align-items-center flex-lg-row-reverse">
+            <div class="col-md-6 col-xl-6 mb-4 mb-lg-0 ">
+                <!-- requires glightbox, please flag the option in the picostrap customizer panel-->
+
+
+                <div class="lc-block position-relative"><img class="img-fluid rounded shadow" src="images\Our mom's story.jpg" sizes="(max-width: 3840px) 100vw, 3840px" width="3840" height="" alt="Our mom story">
+                    <a class="position-absolute top-50 start-50 translate-middle glightbox d-flex justify-content-center align-items-center" href="https://youtu.be/-UBUaWWBE8k" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="5em" height="5em" fill="currentColor" class="text-white" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div><!-- /col -->
+            <div class="col-md-6 col-xl-5">
+                <div class="lc-block mb-3">
+                    <div editable="rich">
+                        <h1 class="display-5 fw-bold">Our Mom's Story</h1>
+                    </div>
+                </div><!-- /lc-block -->
+                <!-- /lc-block -->
+
+
+                <div class="lc-block mb-4 px-2">
+                    <div editable="rich">
+
+                      <p class="text-body-emphasis" style="text-align: justify;">Our Mom was completely active during her lifetime, manages office, home and other stuff due to her untiring attitude. Always working all time, fit & fine (with just few age related problem like pain in knees and legs). All went perfectly normal till Jan 2008 and then she started experiencing some difficulty in body one after other.  We got her checked with many doctors and at the end it came out to be this incurable disease (ALS: motor neuron disease). It was most devastating news till date where our life came to standstill.  We consulted the best doctors in India, and also world over through internet, however there was NO CAUSE or CURE for this disease till date.</p>
+
+                    </div>
+                </div>
+                <div class="lc-block">
+                    <a class="btn btn-lg btn-outline-success" href="Our_mom_story.html" role="button">Read Full Story</a>
+                </div><!-- /lc-block -->
+            </div><!-- /col -->
+        </div>
+    </div>
+       
+  
+<hr>
+
+<!-- analytics new -->
+<div class="container shadow">
+  <div class="row mb-2">
+      <div class="col-md-12 text-center">
+          <div class="lc-block">
+              
+              <h2 editable="inline" class="display-2 mb-2"><b>Analytics</b></h2>
+              
+          </div>
+          
+          <!-- /lc-block -->
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-3 col-md-6 bg-primary text-light text-center" style="padding:60px">
+          <div class="lc-block mb-3">
+              
+              <i class="fa-solid fa-people-group" style="font-size: 4rem;" ></i>
+          </div>
+          <div class="lc-block">
+              <div editable="rich">
+                  <p class="display-4">650+</p>
+              </div>
+          </div>
+          <!-- <div class="lc-block pb-1">
+              <hr>
+          </div> -->
+          <div class="lc-block">
+              <div editable="rich">
+                  <p> 650+ Patient connected Since 2015</p>
+              </div>
+          </div>
+          <!-- /lc-block -->
+      </div>
+      <div class="col-lg-3 col-md-6 text-light text-center bg-secondary" style="padding:60px">
+          <div class="lc-block mb-3">
+              <i class="fa-solid fa-hand-holding-medical" style="font-size: 4rem;"></i>
+          </div>
+          <div class="lc-block ">
+              <div editable="rich">
+                  <p class="display-4">154+</p>
+              </div>
+          </div>
+          
+          <div class="lc-block">
+              <div editable="rich">
+                  <p> Provided critical ICU support to 154+ members</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-light text-center bg-danger" style="padding:60px">
+          <div class="lc-block mb-3">
+              
+              <i class="fa-solid fa-comments" style="font-size: 4rem;"></i>
+          </div>
+          <div class="lc-block ">
+              <div editable="rich">
+                  <p class="display-4">200K+</p>
+              </div>
+          </div>
+          
+          <div class="lc-block">
+              <div editable="rich">
+                  <p> 200K+ Whatsapp conversations about challenges/solutions.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-light text-center bg-info" style="padding:60px">
+          <div class="lc-block mb-3">
+              <i class="fa-solid fa-user-plus" style="font-size: 4rem;"></i>
+          </div>
+          <div class="lc-block ">
+              <div editable="rich">
+                  <p class="display-4">&gt;102</p>
+              </div>
+          </div>
+          <div class="lc-block pb-1">
+              <hr class="w-25 bg-light">
+          </div>
+          <div class="lc-block">
+              <div editable="rich">
+                  <p>102+ new patient joined the ALS care and support group 2023/p>
+              </div>
+          </div>
+          
+      </div>
+      
+  </div>
+  <p editable="inline">
+    <br> <div class="mx-2 py-3 text-center"><a href="aboutus\analytics.html" class="btn btn-outline-primary">Check out Analytics page</a></div>
+</p>
+  
+</div>
+
+      <!-- <div>features</div> -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="d-none"></svg>
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom ">Learn More -</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 ">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg> -->
+              <i class="fa-solid fa-hospital-user"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">ALS</h3>
+              <p> What is ALS (Amyotrophic Lateral Sclerosis)?, its types, diagnosis methods, and available drugs for management.</p><br>
+              <a href="#" class="btn btn-primary">
+                Explore
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fa-solid fa-lungs"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">ALS Management</h3>
+              <p >This section provides an overview of ALS management, addressing speech, limb, feeding, and breathing challenges, along with advanced care like feeding tubes, tracheostomies, and ventilators.</p><br>
+              <a href="#" class="btn btn-primary">
+                Explore
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Resource</h3>
+              <p>This section contains information about local chapters, helpful contacts of Nurse, doctors, dealers and more from India.</p><br>
+              <a href="#" class="btn btn-primary">
+                Explore
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fa-solid fa-photo-film"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">ALS Stories</h3>
+              <p>This section contains image of ALSCAS memebers, patients, video of doctor session, newsletters and events done and participated by our community. </p><br>
+              <a href="#" class="btn btn-primary">
+                Explore
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fa-solid fa-bullhorn"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">Advocacy/Media</h3>
+              <p>This sectiopn contain information about the advocacy effort done by ALSCAS India, Our demand for ALS patient in India from Govt, and more.</p><br>
+              <a href="#" class="btn btn-primary">
+                Explore
+              </a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fa-solid fa-address-card"></i>
+            </div>
+            <div>
+              <h3 class="fs-2 text-body-emphasis">About Us</h3>
+              <p>This section contain all information about the organization, ALSCAS history, our vision, our mission, what we do and contact information.</p><br>
+              <a href="#" class="btn btn-primary">
+                Explore
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonials -->
+      <div class="container pb-2" style="background-color: #ffbd77;
+      background-image: linear-gradient(319deg, #ffbd77 0%, #f0f4a4 37%, #acfcd9 100%);
+         ; border-radius: 8px;">
+          <div>
+            <h1 class="section-header" style="padding-top: 10px; padding-left: 10px;">Blessings <a href="#" class="btn btn-outline-dark">
+              Read More
+            </a></h1>
+            
+            </div>
+          <hr class="featurette-divider">
+          <div class="testimonials">
+              
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile" style="
+                                margin-bottom: 30px;
+                                text-align: center;">
+                                    <div class="img-area" style="margin: 0 15px 15px 15px;">
+                                      <img style="height: 200px; width: 200px; border-radius: 50%; border: 4px solid rgb(238, 165, 234);" src="images\Anjali_pradhan_testimonial.jpeg" alt="">
+                                    </div>
+                                    <div class="bio" style="font-family: 'Berkshire Swash', cursive;">
+                                        <h2 >Anjali Pradhan </h2>
+                                        <h4 >Caregiver, Delhi</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content" style="font-size: 18px; ">
+                                    <p style="text-align: justify;" ><span><i class="fa fa-quote-left"></i><br></span>U are no doubt a sparkle in our group n we hv to carry forward the fire as challenges in the battle of ALS journey and learn not to give up👍👍 rather give extra care n love ❤️ to our dearest PALS n CALS. <span><i class="fa fa-quote-right"></i></span>​</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="profile" style="
+                              margin-bottom: 30px;
+                              text-align: center;">
+                                  <div class="img-area" style="margin: 0 15px 15px 15px;">
+                                    <img style="height: 200px; width: 200px; border-radius: 50%; border: 4px solid rgb(224, 176, 103);" src="images\Vijayabharti-testimontnial.jpg" alt="">
+                                  </div>
+                                  <div class="bio" style="font-family: 'Berkshire Swash', cursive;">
+                                      <h2>Vijaya Bharati</h2>
+                                      <h4  style="font-family: 'Berkshire Swash', cursive;">Caregiver, Hyderabad</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="content" style="font-size: 18px;">
+                                  <p style="text-align: justify;"><span><i class="fa fa-quote-left"></i><br></span>I'm really glad I found this group, I always thank all of you in my heart.<span><i class="fa fa-quote-right"></i></span></p>     
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="profile" style="
+                              margin-bottom: 30px;
+                              text-align: center;">
+                                  <div class="img-area" style="margin: 0 15px 15px 15px;">
+                                    <img style="height: 200px; width: 200px; border-radius: 50%; border: 4px solid rgb(220, 178, 233);" src="alscns-logo.png" alt="">
+                                  </div>
+                                  <div class="bio" style="font-family: 'Berkshire Swash', cursive;">
+                                      <h2>Thakur Uncle</h2>
+                                      <h4 style="font-family: 'Berkshire Swash', cursive;">Caregiver, Delhi</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="content" style="font-size: 18px; ">
+                                  <p style="text-align: justify;"><span><i class="fa fa-quote-left"></i><br></span>Just to share my feelings : I think no amount of gratitude , blessings and praise that the group members rightly extend to you both, is enough for what you have been doing inspite of your own issues. What you have been doing touches the heart deeply. 
+                                    Thank you once again. <span><i class="fa fa-quote-right"></i></span></p>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>  
+                </div>
+                <div class="carousel-item">
+                  <div class="single-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="profile" style="
+                            margin-bottom: 30px;
+                            text-align: center;">
+                                <div class="img-area" style="margin: 0 15px 15px 15px;">
+                                  <img style="height: 200px; width: 200px; border-radius: 50%; border: 4px solid rgb(220, 178, 233);" src="alscns-logo.png" alt="">
+                                </div>
+                                <div class="bio" style="font-family: 'Berkshire Swash', cursive;">
+                                    <h2>Jyoti </h2>
+                                    <h4>Caregiver, Delhi</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content" style="font-size: 18px;">
+                                <p style="text-align: justify;"><span><i class="fa fa-quote-left"></i><br></span>Thank you Satvinder 
+                                  Truly hats off to you for creating this group and being so involved .
+                                  Actually it made the journey for us so much easier . Otherwise we would be wondering where to get answers to so many questions . 
+                                  Thank you once again. <span><i class="fa fa-quote-right"></i></span></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+              </div>
+              <div class="carousel-item">
+                <div class="single-item">
+                  <div class="row">
+                      <div class="col-md-5">
+                          <div class="profile" style="
+                          margin-bottom: 30px;
+                          text-align: center;">
+                              <div class="img-area" style="margin: 0 15px 15px 15px;">
+                                <img style="height: 200px; width: 200px; border-radius: 50%; border: 4px solid rgb(220, 178, 233);" src="alscns-logo.png" alt="">
+                              </div>
+                              <div class="bio">
+                                  <h2> Harinder Singh Rawat</h2>
+                                  <h4> Caregiver, Mumbai</h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="content" style="font-size: 18px;">
+                              <p style="text-align: justify;"><span><i class="fa fa-quote-left"></i><br></span>It a great pleasure meeting Satvinder and Sukhvinder today at my house. They brought smile on Neerja’s face after such a long time. They are indeed a store house of information and wisdom and told us if so many small yet import procedures in taking care of patients. <span><i class="fa fa-quote-right"></i></span></p>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+          </div>
+      </div>
+    </div>
+    <!-- Join Group -->
+    <div class="container my-2 " id="joingroup">
+      <div class="p-4 text-center bg-body-tertiary rounded-3">
+        <!-- <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg> -->
+        <i class="bi bi-whatsapp" style="font-size: 3em; color: #09cb84;"></i>
+        <h1 class="text-body-emphasis">Join Our Whats App Group</h1><br> 
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+          If you wish to be part of our 'ALS care & support whatsapp group'  started in 2015, (where CALS across India support each other for any day to day challenges during progression of this disease), then please share few details by clicking the button below, fill the Form to join. 
+        </p><br>
+        <div class="d-inline-flex gap-2 mb-5">
+          <a href="https://tr.ee/CY8fClWyqI"> <button class="d-inline-flex align-items-center btn btn-success btn-lg px-4 rounded-pill" type="button">
+            Join Us
+            
+          </button></a>
+        </div>
+      </div>
+    </div>
+
+      <!-- footer -->
+      
+      <div class="container-fluid  mt-2 rounded-3 px-3" style="background-color: #70b2d9;
+      background-image: linear-gradient(315deg, #70b2d9 0%, #39e5b6 74%);">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>ALS Management</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Join Group</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Ventilator</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Feeding Tube</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Daily Routine</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home ICU Setup</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>RESOURCE</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="https://alslifemanagement.weebly.com/" class="nav-link p-0 text-body-secondary">Our Old Website</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Assistive Devices</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Drugs Available</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Diagnosis</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Knowledge Sessions</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>ABOUT</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Story</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our's Mom Story</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">ALS Warriors Stories</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form id="newsletterForm">
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+                <p id="responseMessage" style="margin-top: 10px;"></p>
+            </form>
+            
+              <div><a href="donation.html"><button class="my-5 btn btn-danger">Donate</button></a></div>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2024 ALS Care and Support Foundation, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex py-2" >
+              <li ><a class="link-body-emphasis dropdown-item mx-2" href="https://twitter.com/alscasindia"><i class="bi bi-twitter-x mx-1" style="font-size: 1.4em; color: #020202;"></i></a></li>
+                      <li ><a class="link-body-emphasis dropdown-item mx-2" href="https://www.instagram.com/als.careandsupportindia/"><i class="bi bi-instagram mx-1" style="font-size: 1.4em; color: #cb094a;"></i></a></li>
+                      <li ><a class="link-body-emphasis dropdown-item mx-2" href="https://www.facebook.com/people/ALS-Care-Support-India/100077315825197/"><i class="bi bi-facebook mx-1" style="font-size: 1.4em; color: #0940cb;"></i></a></li>
+                      <li ><a class="link-body-emphasis dropdown-item mx-2" href="https://www.youtube.com/channel/UCAk1mKwi_tj1UywUSP5kHag"><i class="bi bi-youtube mx-1" style="font-size: 1.4em; color: #e90101;" ></i></a></li>
+                      <li ><a class="link-body-emphasis dropdown-item mx-2" href="https://www.linkedin.com/company/als-care-and-support-foundation/"><i class="bi bi-linkedin mx-1" style="font-size: 1.4em; color: #0940cb;"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="https://linktr.ee/alscasindia"><i class="fa-solid fa-link" style="font-size: 1.5em;"></i></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-arrow-up-circle-fill" style="font-size: 1.5em; color:rgb(145, 140, 140);"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+      
+      <!-- <script>
+        window.onload = function() {
+          // Scrolls down 100px after 1 second
+          setTimeout(function() {
+            window.scrollTo({ top: 300, behavior: 'smooth' });
+          }, 500);
+          
+          // Scrolls back to the top after 2 seconds
+          setTimeout(function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 1200);
+        };
+      </script> -->
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

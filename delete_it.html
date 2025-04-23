@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Responsive Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      padding: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    thead {
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f1f3f5;
+    }
+
+    tbody tr:hover {
+      background-color: #e9ecef;
+    }
+
+    @media (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        padding: 10px;
+      }
+
+      td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+
+      td::before {
+        position: absolute;
+        top: 12px;
+        left: 20px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: 600;
+        color: #495057;
+        content: attr(data-label);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Status</th>
+      <th>Owner</th>
+      <th>Due Date</th>
+      <th>Progress</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Project">Website Redesign</td>
+      <td data-label="Status">In Progress</td>
+      <td data-label="Owner">Alice</td>
+      <td data-label="Due Date">May 12, 2025</td>
+      <td data-label="Progress">60%</td>
+    </tr>
+    <tr>
+      <td data-label="Project">Mobile App</td>
+      <td data-label="Status">Completed</td>
+      <td data-label="Owner">Bob</td>
+      <td data-label="Due Date">Apr 5, 2025</td>
+      <td data-label="Progress">100%</td>
+    </tr>
+    <tr>
+      <td data-label="Project">Marketing Plan</td>
+      <td data-label="Status">Pending</td>
+      <td data-label="Owner">Clara</td>
+      <td data-label="Due Date">Jun 1, 2025</td>
+      <td data-label="Progress">0%</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

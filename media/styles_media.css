@@ -1,0 +1,188 @@
+/* Reset some default styles for better consistency */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Urbanist:ital,wght@1,500&display=swap');
+
+*{
+    text-decoration: none;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body {
+    font-family:  sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/* Navigation Bar Styles */
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: rgb(3, 3, 3);
+    padding: 15px;
+    height: 80px;
+    width: 100%;
+    
+} */
+
+.name{
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    
+}
+.navbar-brand{
+    height: 90px;
+    width: 80px;
+    display: flex;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+.menu {
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    padding-right: 30px;
+}
+
+.menu li {
+    margin: 0 15px;
+    list-style: none;
+    
+}
+
+.dropdown-menu ul li{
+    display: none;
+    position:fixed;
+    flex-direction: column;
+}
+
+
+#carouselExampleCaptions{
+    /* padding-top: 100px; */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* Submenu Styles */
+.submenu ul {
+    display: none;
+    position: absolute;
+    background-color: #f4e7ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.submenu:hover ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.submenu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    
+    /* background-color: rgb(214, 243, 243); */
+    
+
+}
+.bars{
+    font-size: 35px;
+    float: right;
+    color: rgb(231, 138, 200);
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Content Section Styles */
+.content {
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+}
+
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #3b82f6;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
