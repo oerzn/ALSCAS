@@ -16,6 +16,7 @@
     .then(response => response.text())
     .then(data => document.getElementById("navbar").innerHTML = data);
 </script>
+<body>
 <div class="container-fluid px-4 py-4  ">
     <div class="row">
         <div class="col-md-4 ">
@@ -49,6 +50,7 @@
                       </p>
 
                       <p >As there are procedures and monitoring which need to be active throughout 24*7... we cannot say when we start our day. However as per anybody regular routine, we are starting time schedule 7 AM. Activities which are repeated, their frequency values are highlighted with blue color. <span style="color: tomato;"> Most important and urgent procedure is highlighted in red i.e. trachea suction.</span></p>
+                      <p>For Tracheostomy dressing and PEG dressing check the <a href="PEG_Tracheostomy_dressing.html">Dressing page</a></p>
                 </div>
             </div>
         </div>
@@ -448,6 +450,17 @@
         </p></p>
 
     </div>
+    <div class="my-2 py-4 px-4 border-2 border-black  border">
+        <h5>Procedure name:- <span style="color: cornflowerblue;">Clean Suction Jar</span></h5>
+        <h5>Timing:-22:30-22:50 PM     </h5>
+        <h5>Frequency(in a day):- 1</h5>
+        <h5>Time taken(mins):-    20 min </h5>
+        <p style=" color: rgb(117, 92, 92);">Procedure ---> <p class="py-2 "> Wear gloves, take 4-5 wipes, sanitizer, wear mask.
+            Take the suction machine outside the room, take the jar out and carefully empty it in Western toilet and flush it. Pour hand wash and dettol in it, clean it. Sanitize the jar and whole machine. 
+               
+        </p></p>
+
+    </div>
 
     <div>
         <a href="#"><button id="download-button" class="btn btn-success">Download Daily Routrine PDF</button></a>
@@ -473,3 +486,5 @@
     .then(response => response.text())
     .then(data => document.getElementById("footer").innerHTML = data);
 </script>
+</body>
+</html>
